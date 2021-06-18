@@ -1,0 +1,298 @@
+{
+  "name": "HS | Cocoa",
+  "author": "happysolucki",
+  "size": {
+    "width": "100%",
+    "height": "100%"
+  },
+  "options": [
+    {
+      "type": "title",
+      "text": "Look + Feel"
+    },
+    {
+      "type": "page",
+      "text": "Appearance",
+      "options": [
+        {
+          "type": "option",
+          "text": "Theme",
+          "default": 1,
+          "key": "theme",
+          "options": [
+            {
+              "text": "Original",
+              "value": 1
+            },
+            {
+              "text": "Frosty",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "type": "comment",
+          "text": "Appearance can also be changed on the fly by tapping on the pfp (assuming you didn't hide it)."
+        },
+        {
+          "type": "page",
+          "text": "Colors",
+          "options": [
+            {
+              "type": "color",
+              "text": "Greet Quote Color",
+              "default": "#e5ebf0",
+              "key": "gqc"
+            },
+            {
+              "type": "color",
+              "text": "Badge Color",
+              "default": "#e5ebf0",
+              "key": "bc"
+            }
+          ]
+        },
+        {
+          "type": "page",
+          "text": "Sizing",
+          "options": [
+            {
+              "type": "number",
+              "text": "Badge Width",
+              "default": 24,
+              "key": "bw"
+            },
+            {
+              "type": "number",
+              "text": "Badge Height",
+              "default": 4,
+              "key": "bh"
+            }
+          ]
+        },
+        {
+          "type": "gap"
+        },
+        {
+          "type": "slider",
+          "min": 0,
+          "max": 20,
+          "text": "Border Radius",
+          "default": 12,
+          "key": "sl-br"
+        },
+        {
+          "type": "slider",
+          "min": 0,
+          "max": 20,
+          "text": "Blur Intensity for Frosty Theme",
+          "default": 12,
+          "key": "sl-blur"
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "text": "Custom Text",
+      "options": [
+        {
+          "type": "text",
+          "text": "Username",
+          "default": "unlucki",
+          "key": "usr",
+          "placeholder": "Name",
+          "mode": "short"
+        },
+        {
+          "type": "text",
+          "text": "Time Quote Text",
+          "default": "Alignment... Post Panic",
+          "key": "tqt",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "text": "Greet Quote Text",
+          "default": "I live this life for my ancestors",
+          "key": "gqt",
+          "placeholder": ""
+        },
+        {
+          "type": "comment",
+          "text": "Leaving any of these fields empty will hide their respective text & container."
+        },
+        {
+          "type": "gap"
+        },
+        {
+          "type": "switch",
+          "text": "Use System Font",
+          "default": false,
+          "key": "sysfont"
+        },
+        {
+          "type": "comment",
+          "text": "When enabled, this widget will use your system/snowboard font instead of the one provided in the widget (Nunito).\n\nThe jailbreak you use will determine which of your system or snowboard font is used (libhooker -> system only, checkra1n/unc0ver -> snowboard priority)."
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "text": "Hiding Elements",
+      "options": [
+        {
+          "type": "switch",
+          "text": "Hide Dock Badges",
+          "default": false,
+          "key": "switch_hdb"
+        },
+        {
+          "type": "switch",
+          "text": "Hide All Badges",
+          "default": false,
+          "key": "switch_hab"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Info Box Username",
+          "default": false,
+          "key": "switch_hibu"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Info Box Time",
+          "default": false,
+          "key": "switch_hibt"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Alternative Greeting",
+          "default": false,
+          "key": "switch_hag"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Music Button",
+          "default": false,
+          "key": "switch_hmb"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Profile Picture",
+          "default": false,
+          "key": "switch_hpp"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Home & Music Containers",
+          "default": false,
+          "key": "switch_hhmc"
+        },
+        {
+          "type": "switch",
+          "text": "Hide Time Containers",
+          "default": false,
+          "key": "switch_htc"
+        },
+        {
+          "type": "gap"
+        },
+        {
+          "type": "title",
+          "text": "Only One Thing"
+        },
+        {
+          "type": "switch",
+          "text": "Only Time Containers",
+          "default": false,
+          "key": "switch_otc"
+        },
+        {
+          "type": "switch",
+          "text": "Only Dock Containers",
+          "default": false,
+          "key": "switch_odc"
+        },
+        {
+          "type": "switch",
+          "text": "Only Home Container",
+          "default": false,
+          "key": "switch_hateh"
+        },
+        {
+          "type": "switch",
+          "text": "Only Music Container",
+          "default": false,
+          "key": "switch_hatem"
+        },
+        {
+          "type": "comment",
+          "text": "Enabling one of these switches will persistantly show said container, while also hiding every other element.\n\nI would advise disabling every option in Hiding Elements if you want to use either of these."
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "text": "Behavior",
+      "options": [
+        {
+          "type": "switch",
+          "text": "Prevent Home Container From Closing on App Launch",
+          "default": false,
+          "key": "switch_pabc"
+        },
+        {
+          "type": "gap"
+        },
+        {
+          "type": "switch",
+          "text": "Battery Saver Mode",
+          "default": false,
+          "key": "switch_bm"
+        },
+        {
+          "type": "comment",
+          "text": "Enabling this will remove seconds display from both time containers."
+        },
+        {
+          "type": "title",
+          "text": "Break Glass In Case of Emergency"
+        },
+        {
+          "type": "switch",
+          "text": "Reset",
+          "default": false,
+          "key": "reset"
+        },
+        {
+          "type": "comment",
+          "text": "Enabling this will reset all apps placed in the widget. Try using this first if you have any issues with the widget.\n\nPLEASE REMEMBER TO TURN DISABLE THIS IMMEDIATELY AFTER ENABLING & CONFIRMING THE WIDGET SETTINGS."
+        }
+      ]
+    },
+    {
+      "type": "gap"
+    },
+    {
+      "type": "title",
+      "text": "Contributors"
+    },
+    {
+      "type": "link",
+      "text": "happysolucki",
+      "url": "https://twitter.com/happysolucki"
+    },
+    {
+      "type": "gap"
+    },
+    {
+      "type": "title",
+      "text": "Inspiration & Creator of Android Version"
+    },
+    {
+      "type": "link",
+      "text": "mocacocoa",
+      "url": "https://twitter.com/mocacocoa_theme"
+    }
+  ]
+}

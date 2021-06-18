@@ -1,0 +1,118 @@
+/** 6 / 6s / 7 / 8 */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .timeContainer {
+    width: 42%;
+  }
+  .timeContainer,
+  #altTimeContainer {
+    margin-top: 5%;
+  }
+  .dockContainer {
+    height: 17%;
+  }
+  .musicContainer,
+  .homeContainer {
+    height: 52.1%;
+    top: 27%;
+  }
+  .app {
+    width: 35px;
+    height: 35px;
+  }
+  .app .badge {
+    top: 39px;
+  }
+  #musicArtwork {
+    width: 45vw;
+    height: 45vw;
+  }
+  #musicButtons {
+    margin: 0 auto;
+  }
+  .txtSm {
+    font-size: calc(1rem);
+  }
+  .txtMd {
+    font-size: calc(1rem + 1.3vw);
+  }
+  .txtLg {
+    font-size: calc(1rem + 2.6vw);
+  }
+  #buttons {
+    width: 18.5%;
+  }
+  #mediaButton {
+    width: 5.2vw;
+    height: 5.2vw;
+  }
+  .circle {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+}
+
+/** 6+ / 6s+ / 7+ / 8+ */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  #widget {
+    font-size: calc(1rem + 0.35vw);
+  }
+  .timeContainer {
+    width: 42%;
+  }
+  .timeContainer,
+  #altTimeContainer {
+    margin-top: 5%;
+  }
+  #timeQuote {
+    max-height: 55px;
+  }
+  .dockContainer {
+    height: 17%;
+  }
+  .musicContainer,
+  .homeContainer {
+    height: 52.1%;
+    top: 27%;
+  }
+  .app {
+    width: 37px;
+    height: 37px;
+  }
+  #musicArtwork {
+    width: 45vw;
+    height: 45vw;
+  }
+  #musicButtons {
+    margin: 0 auto;
+  }
+  .txtSm {
+    font-size: calc(1rem + 0.25vw);
+  }
+  .txtMd {
+    font-size: calc(1rem + 1.3vw);
+  }
+  .txtLg {
+    font-size: calc(1rem + 2.6vw);
+  }
+  #buttons {
+    width: 17.5%;
+  }
+  #mediaButton {
+    width: 5vw;
+    height: 5vw;
+  }
+  .circle {
+    width: 6.3vw;
+    height: 6.3vw;
+  }
+}
+
+/** XS Max / Pro Max / XR / 11 */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  #timeQuote {
+    max-height: 59px;
+  }
+}

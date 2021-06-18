@@ -1,0 +1,80 @@
+@font-face{
+    font-family: med;
+    src: url(../../fonts/BoubaRound-Medium.otf);
+}
+
+#promptWindow {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 320px;
+    height: auto;
+    max-height: 55vh;
+    background-color: var(--wallpaperBg);
+    -webkit-backdrop-filter: blur(var(--wallpaperBlur));
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    color: white;
+    z-index: 99999;
+    transition: opacity 350ms;
+    font-family: med;
+}
+
+#promptWindow.close {
+    opacity: 0;
+}
+
+#promptWindow #promptMessage {
+    padding: 10px;
+    font-size: 12px;
+    overflow: scroll;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    white-space: pre-line;
+    margin: 20px;
+    text-align: center;
+}
+
+#promptWindow .promptOptions {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#promptWindow .promptOptions #promptYes, #promptWindow .promptOptions #promptNo{
+    position: absolute;
+    top: 5px;
+    padding:5px;
+    text-align: center;
+    background-color: var(--accentColor);
+    height: 20px;
+    margin-top: 10px;
+    box-shadow: var(--cardShadows);
+    border-radius: var(--cardRadius);
+    font-size: 13px;
+}
+
+#promptWindow .promptOptions #promptYes {
+    right: 20px;
+    width: 30%;
+}
+
+#promptWindow .promptOptions #promptNo {
+    left: 20px;
+    width: 30%;
+}
+
+#promptWindow .promptOptions #promptYes.oneButton {
+    position: absolute;
+    top: 5px;
+    left:50%;
+    -webkit-transform:translate(-50%);
+    width: 60%;
+}

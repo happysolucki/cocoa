@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="emulation.js"></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>HS | Cocoa</title>
+    <link rel="stylesheet" href="contents/libs/css/theDrawer.css" />
+    <link rel="stylesheet" href="contents/libs/css/thePrompter.css" />
+    <link rel="stylesheet" href="contents/css/style.css" />
+    <link rel="stylesheet" href="contents/css/devicestyle.css" />
+  </head>
+  <body>
+    <div id="widget" class="flex cntrA cntrJ">
+      <div id="container" class="flex col spcbtwJ">
+        <div
+          id="timeContainer"
+          class="timeContainer flex posR cntrA cntrJ br darkBG visible"
+        >
+          <div id="innerContainer">
+            <div id="username"></div>
+            <div
+              id="bottomPortion"
+              class="bottomPortion flex cntrJ lightBG trnsBG"
+            >
+              <div id="stuff" class="flex col spcbtwJ">
+                <div id="timeQuote" class="txtMd"></div>
+                <div id="divider"></div>
+                <div id="timeStuff" class="txtSm">
+                  <div id="date"></div>
+                  <div id="battery"></div>
+                  <div id="time"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="altTimeContainer" class="inactive">
+          <div id="altTimeString" class="txtLg">
+            <a id="timeString"></a><span id="x" class="txtMd posR">x</span
+            ><a id="altBattery"></a>
+          </div>
+          <div id="altGreet"></div>
+        </div>
+        <div
+          id="musicContainer"
+          class="musicContainer flex col cntrA br darkBG inactive"
+        >
+          <div id="musicHeader" class="txtMd flex cntrA">Music</div>
+          <div
+            id="musicPlayContainer"
+            class="musicPlayContainer flex col cntrA cntrJ br lightBG trnsBG"
+          >
+            <div id="musicInnerContainer" class="musicInnerContainer">
+              <div id="musicArtwork" class="br"></div>
+              <div id="musicTitle" class="txtLg">After</div>
+              <div id="musicArtist" class="txtMd">Lucki - Days B4 II</div>
+              <div id="musicButtons">
+                <div id="prev" class="musicButtons"></div>
+                <div id="play" class="musicButtons"></div>
+                <div id="next" class="musicButtons"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="homeContainer"
+          class="homeContainer flex col cntrA br darkBG inactive"
+        >
+          <div id="homeTitle" class="txtMd flex cntrA">Home</div>
+          <div
+            id="homeIconContainer"
+            class="homeIconContainer flex cntrA cntrJ br lightBG trnsBG"
+          >
+            <div id="homeIconInnerContainer" class="flex col spcbtwJ">
+              <div
+                id="homeRowTop"
+                class="homeRowTop flex cntrA cntrJ br darkBG trnsBG"
+              >
+                <div id="topHolder" class="flex cntrA spcbtwJ"></div>
+              </div>
+              <div
+                id="homeRowMiddle"
+                class="homeRowMiddle flex col cntrA cntrJ br darkBG trnsBG"
+              >
+                <div id="midHolder" class="flex col"></div>
+              </div>
+              <div
+                id="homeRowBottom"
+                class="homeRowBottom flex cntrA cntrJ br darkBG trnsBG"
+              >
+                <div id="bottomHolder" class="flex cntrA spcbtwJ"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dockContainer" class="dockContainer posR br darkBG trnsBG">
+          <div id="greeting" class="flex cntrA cntrJ">
+            <div id="greetContainer" class="flex cntrA spcbtwJ">
+              <div id="textGreet" class="flex cntrA">
+                <div id="pfp" class="circle"></div>
+                <div id="textGreetContainer" class="flex col spcbtwJ">
+                  <div id="hello">Hello, unlucki!</div>
+                  <div id="greetQuote" class="txtSm">woah there bucko</div>
+                </div>
+              </div>
+              <div id="buttons" class="flex cntrA spcbtwJ">
+                <div
+                  id="mediaButton"
+                  class="circle lightBG flex cntrA cntrJ trnsBG"
+                >
+                  <div id="mbImg" class="circle"></div>
+                </div>
+                <div
+                  id="homeButton"
+                  class="circle lightBG flex cntrA cntrJ trnsBG"
+                >
+                  <div id="hbImg" class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="iconRow" class="iconRow flex cntrA cntrJ br lightBG trnsBG">
+            <div id="iconHolder" class="flex cntrA spcbtwJ"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="drawer"></div>
+    <script src="contents/libs/js/localization.js"></script>
+    <script src="contents/libs/js/time.js"></script>
+    <script src="contents/libs/js/theStorage.js"></script>
+    <script src="contents/libs/js/thePrompter.js"></script>
+    <script src="contents/libs/js/theDrawer.js"></script>
+    <script src="contents/libs/js/taphold.js"></script>
+    <script src="contents/js/global.js"></script>
+    <script src="contents/js/main.js"></script>
+  </body>
+</html>

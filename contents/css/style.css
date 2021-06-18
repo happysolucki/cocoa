@@ -1,0 +1,364 @@
+@font-face {
+  src: url(../fonts/Nunito-Bold.ttf);
+  font-family: med;
+}
+@font-face {
+  src: url(../fonts/Nunito-ExtraBold.ttf);
+  font-family: bold;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 6pt;
+}
+#widget {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-family: med;
+  font-size: calc(1rem + 0.2vw);
+  letter-spacing: 0.03rem;
+}
+#container {
+  width: 82%;
+  height: 97%;
+}
+
+/** Info Box */
+
+.timeContainer {
+  width: 45%;
+  margin-top: 15%;
+  padding: 7px;
+  box-sizing: border-box;
+}
+#innerContainer {
+  width: 100%;
+}
+#username {
+  width: 100%;
+  height: 15%;
+  margin-left: 7px;
+  padding: 0 0 7px;
+}
+.bottomPortion {
+  width: 100%;
+  height: 85%;
+  padding: 10px 0;
+}
+#stuff {
+  width: 85%;
+  height: 90%;
+}
+#timeQuote {
+  font-family: bold;
+  max-height: 52px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+#divider {
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  margin: 5px 0 7px;
+}
+#timeStuff {
+  text-transform: lowercase;
+}
+#battery,
+#time {
+  margin-top: 3px;
+}
+
+/** Alternative Time */
+
+#altTimeContainer {
+  margin-top: 15%;
+  position: absolute;
+}
+#x {
+  top: -3px;
+  margin: 0 2px;
+}
+
+/** Music Box */
+
+.musicContainer {
+  width: 82%;
+  height: 49%;
+  position: absolute;
+  top: 32%;
+}
+#musicArtwork {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  margin: 5% auto 5% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#musicTitle,
+#musicArtist {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#musicTitle {
+  margin-bottom: 0.5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#musicButtons {
+  height: 15%;
+  width: 70%;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.musicButtons {
+  width: 20%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#prev {
+  background-image: url(../mediaIcons/prev.png);
+}
+#play {
+  background-image: url(../mediaIcons/play.png);
+}
+#next {
+  background-image: url(../mediaIcons/next.png);
+}
+
+/** Home Box */
+
+.homeContainer {
+  position: absolute;
+  width: 82%;
+  height: 49%;
+  top: 32%;
+  overflow: hidden;
+}
+#homeTitle,
+#musicHeader {
+  width: 90%;
+  height: 10%;
+}
+.homeIconContainer,
+.musicPlayContainer {
+  width: 100%;
+  height: 90%;
+}
+#homeIconInnerContainer,
+.musicInnerContainer {
+  width: 93%;
+  height: 93%;
+}
+.homeRowBottom,
+.homeRowTop {
+  width: 100%;
+  height: 24%;
+}
+.homeRowMiddle {
+  width: 100%;
+  height: 46%;
+}
+#bottomHolder,
+#midHolder,
+#topHolder {
+  width: 85%;
+  height: 90%;
+}
+#midHolder {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 65%;
+}
+
+/** Dock */
+
+.dockContainer {
+  width: 100%;
+  height: 15%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+#greeting {
+  width: 100%;
+  height: 45%;
+}
+#greetContainer {
+  width: 88%;
+  height: 100%;
+}
+#pfp {
+  background: url(../imgs/pfp.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+#textGreetContainer {
+  margin-left: 10px;
+}
+#buttons {
+  width: 20%;
+}
+#mediaButton {
+  width: 5.5vw;
+  height: 5.5vw;
+}
+#mbImg {
+  background: url(../imgs/mbimg.png);
+  background-size: contain;
+  background-position: center;
+  width: 70%;
+  height: 70%;
+}
+#hbImg {
+  background: url(../imgs/hbimg.png);
+  background-size: contain;
+  background-position: center;
+  width: 70%;
+  height: 70%;
+}
+.iconRow {
+  width: 100%;
+  height: 55%;
+}
+#iconHolder {
+  width: 88%;
+  height: 90%;
+}
+
+/** Apps */
+
+.app {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.app .badge {
+  position: relative;
+  left: 50%;
+  top: 44px;
+  border-radius: 3px;
+  text-align: center;
+  color: transparent;
+  transform: translateX(-50%);
+}
+.app[name="Blank"] {
+  border-radius: 10px;
+}
+
+/** Colors */
+
+.darkBG {
+  background-color: #19191c;
+}
+.lightBG {
+  background-color: #242329;
+}
+.darkBlurBG {
+  background-color: rgba(10, 10, 10, 0.25);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.darkBlurBG::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.darkBlurBGC {
+  background-color: rgba(10, 10, 10, 0.15);
+}
+.darkBlurBGtrans {
+  background-color: rgba(10, 10, 10, 0);
+}
+.lightBlurBG {
+  background-color: rgba(100, 100, 100, 0.35);
+}
+
+/** Flex & Transitions */
+
+.inactive {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 500ms, background-color 300ms linear;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 500ms, background-color 300ms linear;
+}
+.posR {
+  position: relative;
+}
+.txtSm {
+  font-size: calc(1rem + 0.1vw);
+}
+.txtMd {
+  font-size: calc(1rem + 1.4vw);
+}
+.txtLg {
+  font-size: calc(1rem + 3.2vw);
+}
+.circle {
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+}
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.cntrA {
+  align-items: center;
+}
+.cntrJ {
+  justify-content: center;
+}
+.spcbtwJ {
+  justify-content: space-between;
+}
+.trnsBG {
+  transition: background-color 300ms linear;
+}
+#homeContainer.inactive,
+#musicContainer.inactive {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 25%, 0);
+  transform: translate3d(0, 25%, 0);
+  -webkit-transition: visibility 0s 2s, opacity 0.3s, transform 0.45s ease-in,
+    background-color 300ms linear;
+  transition: visibility 0s 2s, opacity 0.3s, transform 0.45s ease-in,
+    background-color 300ms linear;
+}
+#homeContainer.visible,
+#musicContainer {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.1s, transform 275ms ease-in-out,
+    background-color 300ms linear;
+  transition: opacity 0.3s 0.1s, transform 275ms ease-in-out,
+    background-color 300ms linear;
+}

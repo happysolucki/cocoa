@@ -1,0 +1,136 @@
+/*This Style was taken from Matt's App | List Widget bundled in XenHTML by Default. Not compulsory but recommended to use it if you use theDrawer.js.*/
+:root{
+    --entry-height: 52px;
+    --horizontal-padding: 6px;
+    --color: #eee;
+    --border-color: rgba(50, 50, 50, 0.2);
+    --badge-color: #eee;
+    --vertical-spacing: 12px;
+    --wallpaperBlur: 10px;
+    --wallpaperBg: #2a2b2c25;
+}
+
+@font-face{
+    font-family: med;
+    src: url(../../fonts/BoubaRound-Medium.otf);
+}
+
+.drawer {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 2%; 
+    -webkit-backdrop-filter: blur(var(--wallpaperBlur));
+    background-color: var(--wallpaperBg);
+    display: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: med;
+    color: white;
+}
+
+.drawer.open {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0 calc(2 * var(--horizontal-padding));
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: calc(3 * var(--vertical-spacing)) 0;
+    margin-top: calc(3 * var(--vertical-spacing) + env(safe-area-inset-top, 0px));
+}
+
+.header #drawerTitle {
+    font-weight: 900;
+}
+
+.header #drawerButton {
+    background-color: var(--wallpaperBg);
+    display: block;
+    padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 12.5px;
+    margin: auto 0;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+#appsHolder {
+    margin-left: -10px;
+    height: calc(100% - 34px - calc(5 * var(--vertical-spacing)) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - var(--dock-height));
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-bottom: var(--vertical-spacing);
+}
+
+.appDiv {
+    position: relative;
+    border-radius: 12.5px;
+    background-color: var(--wallpaperBg);
+    
+
+    width: calc(100% - calc(4 * var(--horizontal-padding)));
+    left: calc(2 * var(--horizontal-padding));
+    height: var(--entry-height);
+    margin-bottom: var(--vertical-spacing);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--horizontal-padding);
+}
+
+.appDiv img {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+    min-height: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    flex: 0;
+    margin-right: var(--horizontal-padding);
+}
+
+.appDiv p {
+    display: block;
+    flex: 1 1 auto;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+.appBadge {
+    min-width: 20px;
+    height: 20px;
+    border-radius: 20px;
+
+    flex: 0 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(255, 59, 48);
+    margin: 0 var(--horizontal-padding);
+    font-size: 0.8rem;
+    color: var(--badge-color);
+}
