@@ -2,6 +2,8 @@
 
 An enhanced iOS rendition of mocacocoa's KLWP.
 
+<img src="readme_images/SS1.jpg" width="28%"> <img src="readme_images/SS2.jpg" width="28%"> <img src="readme_images/SS3.jpg" width="28%">
+
 ### Prerequesites
 
 > A jailbroken device
