@@ -1,4 +1,4 @@
-# HS Cocoa
+# HS | Cocoa
 
 An enhanced iOS rendition of mocacocoa's KLWP.
 
